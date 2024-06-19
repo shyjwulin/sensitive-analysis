@@ -22,57 +22,417 @@
         </noscript>
     <![endif]-->
     <style>
-       .footer-signup {
-        background-color: #f8f8f8;
-        padding: 20px;
-        text-align: center;
-        border-top: 1px solid #ddd;
-       }
-       .footer-signup h3 {
-        margin: 0 0 10px;
-        font-size: 1.5em;
-       }
+        body{
+            margin: 0;
+            background-color: white ;
+            padding: 20px;
+            font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            color: #F6F5F1;
+        }
 
-        .footer-signup p {
-            margin: 0 0 20px;
-            color: #666;
+        .wrapper{
+            background-color: #191B1D;
+            max-width: 700px;
+            margin: 0 auto;
+            box-shadow: 0 0 10px #616e79;
+            border-top: 10px solid #8FB1E3;
+            border-radius: 5px 10px;
         }
-        #signup-form{
+        .logo{
+            text-align: center;
+        }
+        .logo img{
+            max-width: 400px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        .button {
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            
+        }
+        .button-container{
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
         }
-        #email{
-            padding: 10px;
-            font-size: 1em;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            margin-right: 10px;
-        }
-        button[type="submit"] {
+        .btn{
+            display: inline-block;
             padding: 10px 20px;
-            font-size: 1em;
-            border: none;
-            background-color: #0073e6;
-            color: #fff;
-            border-radius: 4px;
-            cursor: pointer;;
+            margin: 0 30px 15px;
+            background-color: #191B1D;
+            color: #8FB1E3;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: 0.3s;
+            font-weight: 700;
+            font-size: 18px;  
+                    
         }
-        button[type="submit"]:hover{
-            background-color: #005bb5;
+        .btn:hover{
+            background-color: white;
+            color: #191B1D;
         }
-         
+        .wrapper h2 {
+            text-align: center;
+            font-size: 62px;
+            letter-spacing: -1.5px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            line-height: 90%;
+        }
+        .wrapper h3{
+            margin-top: 15px;
+            text-align: center;
+            font-size: 20px;
+            letter-spacing: -1.5px;
+            color: #7B7C7C;
+            font-weight: 600;
+        }
+        .button-2 {
+            text-align: center;
+        }
+        .btn_2 {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 30px 0px;
+            background-color: #F6F5F1;
+            color: #191B1D;
+            text-decoration: none;
+            border-radius: 20px;
+            transition: 0.2s;
+            font-weight: 700;
+            font-size: 18px;  
+        }
+        .btn_2:hover{
+            background-color: #8FB1E3;
+            color: #F6F5F1;
+        }
+        .ice_pic {
+            text-align: center;
+        }
+        .ice_pic img{
+            max-width: 700px;
+            margin-top: 0px;
+            margin-bottom: 10px;
+        }
+        .wrapper-2 {
+            background-color: white;
+            max-width: 700px;
+            margin: 0 auto;           
+        }
+        .explore img{
+            max-width: 700px;
+            margin-top: 20px;
+        }
+        .explore h3 {
+            
+            background-color: white;
+            text-align: center;
+            font-size:20px;
+            max-width: 80%;
+            margin-bottom: 0px;
+            margin-top: 0px;
+            line-height: 110%;
+            margin: auto;
+            font-weight: 600;
+        }
+        .explore {
+            text-align: center;
+        }
+        .btn_3{
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px 30px 30px;
+            background-color: #191B1D;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            transition: 0.2s;
+            font-weight: 700;
+            font-size: 18px; 
+        }
+        .btn_3:hover{
+            background-color: #8FB1E3;
+            color: white;
+        }
+        .wrapper-3{
+            background-color: #191B1D;
+            max-width: 700px;
+            margin: 0 auto;   
+        }
+        .benefit{
+            text-align: center;
+        }
+        .cold {
+            text-align: center;
+        }
+        .cold img{
+            max-width: 500px;
+            max-height: 400px;
+            text-align: center;
+            margin-top: 40px;
+          
+        }
+        .benefit img{
+            display: inline-flex;
+            margin: auto;
+            max-width: 300px;
+            max-height: 400px;
+            text-align: center;
+            
+        }
+        .wrapper-4 {
+            background-color: white;
+            max-width: 700px;
+            margin: auto; 
+            margin-top: 20px;    
+            padding-top: 20px;      
+        }
+        .wrapper-4 h2 {
+            text-align: center;
+            font-size: 52px;
+            letter-spacing: -1.5px;
+            margin-bottom: 0px;
+            margin-top: 20px;
+            line-height: 90%;
+            color: black;
+        }
+        .wrapper-4 h3{
+            margin-top: 15px;
+            text-align: center;
+            font-size: 20px;
+            letter-spacing: -1.5px;
+            color: #8FB1E3;
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+        .early {
+            text-align: center;
+            margin-top: 0;
+        }
+        .wrapper-4 p {
+            margin: auto;
+            color: #191B1D;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .wrapper-4 h4 {
+            margin: auto;
+            color: #191B1D;
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: -1.5px;
+            padding-bottom: 60px;
+        }
+        .social-container{
+            text-align: center;
+            margin: auto;
+        }
+        .social-container li {
+            text-align: center;
+            margin: auto;
+        }
+        .rectangle{
+            text-align: center;
+            margin: auto;
+            max-width: 60%;
+            background-color: #8FB1E3;
+            padding: 20px;
+        }
+        .feeling h4{
+            text-align: center;
+            padding-top: 30px;
+        }
+        .emoji-container{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 3vh;
+            margin: 0;
+        }
+        .emoji {
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+            font-size: 35px;
+            color: #8FB1E3;
+            padding-top: 10px;
+            padding-bottom: 30px;
+        }
+        .percentage {
+            font-size: 24px;
+            margin-top: 5px;
+            font-weight: 600;
+            text-align: center;
+        }
+        ul.social{
+            list-style-type: none;
+            text-align: center;
+            margin: auto;
+            max-width: 700px;
+            padding-top: 20px;
+            padding-left: 0px;
+            margin-top: 70px;
+            margin-bottom: 20px;
+        }
+        
+        ul.social li {
+            display: inline;
+            margin-right: 10px;
+            
+           
+        }
+        .social img {
+            max-width: 30px;
+        }
+        p.contact {
+            color: #616e79;
+            line-height: 2;
+        }
+        @media(max-width: 768px) {
+            .wrapper{
+                max-width: 90%;
+                padding: 10px;
+                margin: auto;
+            }
+            .button{
+                max-width: 90%;
+                padding: 5px;
+            }
+            .btn, .btn_2, .btn_3{
+                max-width: 90%;
+                margin: 5px;
+                padding: 5px;
+                
+            }
+            .logo img{
+                max-width: 80%;
+                padding: 10px;
+            }
+            
+            .ice_pic img {
+                max-width: 100%;
+                padding: 10px;
+            }
+            .wrapper-2, .wrapper-3 {
+                max-width: 100%;
+                
+                margin: auto;
+            }
+            .explore img {
+                max-width: 90%;
+                
+            }
+            .benefit img {
+                max-width: 80%;
+            }
+            .cold img {
+                max-width: 90%;
+            }
+            .explore h3 {
+                
+                padding: 10px;
+            }
+            .early p {
+                padding-top: 15px;
+            }
+            .early h3 {
+                padding-bottom: 5px;
+            }
+        }
+        
     </style>
 </head>
 <body>
-    <div class="footer-signup">
-        <h3>Stay Updated</h3>
-        <p>Get the latest news and updates delivered straight to your inbox.</p>
-        <form id="signup-form">
-          <input type="email" id="email" name="email" placeholder="Enter your email" required>
-          <button type="submit">Subscribe</button>
-        </form>
-    </div>
+    <div class="wrapper">
+        <div class="logo">
+            <a href="https://icebarrel.com/" target="_blank"><img src="Ice barrel logo.png" alt="Ice Barrel Logo" title="Ice Barrel Logo"></a>
+        </div>
 
-    <script src="signup.js"></script>
+        <div class="button">
+            <div class="button-container">
+                <a href="https://icebarrel.com/product-category/all/" target="_blank" class="btn">Shop</a>
+                <a href="https://icebarrel.com/faq/" target="_blank" class="btn">F&Q</a>
+                <a href="https://icebarrel.com/blog/" target="_blank" class="btn">Blog</a>
+            </div>
+        </div>
+
+        <div class="wrap">
+            <h2>The world's most <br>advanced chiller</h2>
+            <h3>We're making it easier than ever to get <br>coler and feel better.</h3>
+            <div class="button-2">
+                <a href="https://icebarrel.com/chiller-pre-order/" target="_blank" class="btn_2">Pre-Order Now</a>
+            </div>
+            <div class="ice_pic">
+                <a href="https://icebarrel.com/chiller-pre-order/" target="_blank" title="Ice Barrel Chiller"><img src="Ice Barrel Chiller.png" alt="Ice Barrel Chiller"></a>
+            </div>
+
+        </div>
+        <div class="wrapper-2">
+            <div class="explore">
+                <img src="explore.png" alt="Ice Barrel Chiller capabilities Performance, durability, smartsense">
+                <h3>We've tried every product on the market and found that other options fell short in one way or another. We meticulously <br>designed our chiller ot meet your needs and exceed your expectations.</h3>
+                <a href="https://icebarrel.com/chiller-pre-order/" target="_blank" class="btn_3">Pre-Order Now</a>
+            </div>
+        </div>
+        <div class="wrapper-3">
+            <div class="cold">
+                <img src="cold therapy benefit.png" alt="cold therapy benefits">
+            </div>
+            <div class="benefit">
+                <img src="improves mood.png" alt="cold therapy improves mood">
+                
+                <img src="better recovery.png" alt="cold therapy improves mood">
+                <img src="reduces inflammation.png" alt="cold therapy improves mood">
+                <img src="increase metabolism.png" alt="cold therapy improves mood">
+            </div>
+        </div>
+        <div class="wrapper-4">
+            <div class="early">
+                <h2>Get early access to the <br>first units available</h2>
+                <h3>Don't miss the chance to guarantee your spot <br> in the first wave of shipments.</h3>
+                <a href="https://icebarrel.com/chiller-pre-order/" target="_blank" class="btn_3">Pre-Order Now</a>
+                <p>#GetColderFeelBetter</p>
+                <h4>Two minutes-Feel better all day</h4>
+            </div>
+            <div class="rectangle">
+
+            </div>
+            <div class="feeling">
+                <h4>How did you like this content?</h4>
+            </div>
+            <div class="emoji-container">
+                <div class="emoji" id="happy" onclick="vote('happy')">😊
+                    <div class="percentage" id="happyPercentage">0%</div>
+                </div>
+                <div class="emoji" id="neutral" onclick="vote('neutral')">😐
+                    <div class="percentage" id="neutralPercentage">0%</div>
+                </div>
+                <div class="emoji" id="sad" onclick="vote('sad')">😢
+                    <div class="percentage" id="sadPercentage">0%</div>
+                </div>
+            </div>
+            <div class="social-container">
+                <ul class="social">
+                    <li><a href="https://www.instagram.com/icebarrel/?hl=en" target="_blank"><img src="IG.png" alt="Ice Barrel IG"></a></li>
+                    <li><a href="https://www.youtube.com/channel/UC40pA9GBIVro1iZDRWG8seQ" target="_blank"><img src="youtube.png" alt="Ice Barrel Youtube"></a></li>
+                    <li><a href="https://www.tiktok.com/@icebarrel" target="_blank"><img src="tiktok.png" alt="Ice Barrel TIKTOK"></a></li>
+                </ul>
+                <p class="contact">
+                    London & Partners is registered in England under no. 7493460. Registered Office: London & Partners, 169 Union Street, London, SE1 0LL. <br><br>
+
+                    No longer want to receive these emails? <u>Unsubscribe.</u><br>
+                    Ice Barrel 5452 County Road 201 Millersburg,OH 44654
+                </p>
+            </div>
+        </div>
+
+
+
+    </div> <!--end of wrapper-->
+
+    <script src="script.js"></script>
 </body>
 </html>
