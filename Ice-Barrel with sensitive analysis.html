@@ -433,6 +433,24 @@
 
     </div>
 
-    <script src="script.js"></script>
+    <script>
+       let votes = {
+        happy: 0,
+        neutral: 0,
+        sad: 0
+    };
+    
+    function vote(type) {
+        votes[type]++;
+        updatePercentages();
+    }
+    
+    function updatePercentages() {
+        const totalVotes = votes.happy + votes.neutral + votes.sad;
+        document.getElementById('happyPercentage').innerText = Math.round((votes.happy / totalVotes) * 100) + '%';
+        document.getElementById('neutralPercentage').innerText = Math.round((votes.neutral / totalVotes) * 100) + '%';
+        document.getElementById('sadPercentage').innerText = Math.round((votes.sad / totalVotes) * 100) + '%';
+    }
+    </script>
 </body>
 </html>
